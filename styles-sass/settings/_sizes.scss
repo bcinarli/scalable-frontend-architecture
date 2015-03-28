@@ -1,0 +1,34 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Genel boyut tanımları
+    ------------------------------------------- **/
+/**
+ * Eleman içerik boşlukları
+ */
+$base-spacing: 1em;
+$base-input-spacing: 5px;
+
+
+/**
+ * Grid aralıkları ve grid sayısı
+ */
+
+$base-gutter: 20px;
+$base-grid-columns: 12;
+
+
+/**
+ * Border Widths
+ *
+ * Input vs. elemanları için default border genişliği
+ */
+$base-border-width: 1px;
+
+
+/**
+ * Page Widths
+ *
+ * Elemanların genel genişlikleri
+ */
+$base-max-width: 1180px;

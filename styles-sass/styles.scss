@@ -1,0 +1,74 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Styles
+    ------------------------------------------- **/
+/*
+ * Sayfalarda kullanılan ortak stiller
+ *
+ * Tekrar kullanlabilirliği artırmak ve overwriteları azaltmak için
+ * genelden özele doğru bir kurgu ile kodlar birleştirilmelidir.
+ */
+
+
+/*
+ * AYARLAR - DEĞİŞKENLER
+ *
+ * Stil tanımlarını yaparken sistem boyunca ortak kullanılacak değişkenler
+ * Boyutlar, renkler vs.
+ */
+@import "settings/settings";
+
+
+/*
+ * ARAÇLAR
+ *
+ * Benzer çıktıları verecek kod blokları için sass mixin ve fonksiyonları
+ */
+@import "tools/tools";
+
+
+/*
+ * GLOBAL
+ *
+ * Bütün sayfa ögelerini kapsayan genel tanımlar
+ * normalize.css vs.
+ */
+@import "global/global";
+
+
+/*
+ * LAYOUT
+ *
+ * Sayfanın layout ve içerik yerleşimi olarak bütün ele alınıp tanımlanması
+ * page, wrapper, main, sidebar vs.
+ */
+@import "layout/layout";
+
+
+/*
+ * Elements
+ *
+ * Herhangi bir class eklenmeden html elemanlarının temel görünüm/davranışları
+ * `h1`, `ol`, `blockquote` vs.
+ */
+@import "elements/elements";
+
+
+/*
+ * Components
+ *
+ * Sayfanın kurgusunu oluşturan componentlerin tanımları
+ * menu, box, search-field vs
+ */
+@import "components/components";
+
+
+/*
+ * Auxiliary
+ *
+ * Eklendiğinde duruma göre diğer bütün tanımları iptal edecek, görünürlük, boyutu
+ * düzenleyecek yardımcı tanımlar
+ * `.is-hidden`, `.move-to-start` vs.
+ */
+@import "auxiliary/auxiliary";

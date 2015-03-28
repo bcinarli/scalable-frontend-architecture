@@ -1,0 +1,28 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Visibility Related
+    ------------------------------------------- **/
+/*
+ * İçeriği gizleme
+ */
+.is-hidden
+{
+    display: none;
+}
+
+
+/*
+ * Erişilebilirlik açısından sayfa görünmeyen elemanlar
+ *
+ */
+.for-screenreader-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+}

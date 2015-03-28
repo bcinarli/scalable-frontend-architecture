@@ -1,0 +1,36 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Mixins
+    ------------------------------------------- **/
+/**
+ * Genişlik ile alakalı tanımlar
+ *
+ * @param $column: ilgili tanımda bir satırda olan maximum eleman sayısı
+ *
+ * @depends $numbers: anlaşılabilir/anlamlı class isimlendirme için number-to-class değişkenleri
+ * @depends $ordinals: anlaşılabilir/anlamlı class isimlendirme
+ */
+@mixin widths($column: 1){
+    $chunk-size: 100/$column;
+    $end: $column - 1; // last size always 100% so no need to define it every time
+
+    @if $end == 0 {
+        $end: 1;
+    }
+
+    @for $i from 1 through $end {
+        $ord: nth($ordinals-plural, $column);
+
+        .#{nth($numbers, $i)}-#{$ord} {
+            width: ($chunk-size * $i) * 1%;
+        }
+
+        @if $column > 2 and $i == 1 {
+            // also add singular version
+            .#{nth($numbers, $i)}-#{nth($ordinals, $column)} {
+                @extend .#{nth($numbers, $i)}-#{$ord};
+            }
+        }
+    }
+}

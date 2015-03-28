@@ -1,0 +1,21 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Colors
+    ------------------------------------------- **/
+/**
+ * Named Colors
+ *
+ * Diğer renk tanımlarında tekrar kullanmak için
+ * temel sayfa renk kodları
+ */
+$color-primary    : #c54846;
+$color-secondary  : #0072bc;
+$color-text       : #222;
+
+
+/**
+ * Text renkleri
+ */
+$base-color: $color-text;
+$base-anchor-color: $color-primary;

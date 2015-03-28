@@ -1,0 +1,18 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Lists
+    ------------------------------------------- **/
+ol,
+ul {
+    list-style-position: outside;
+    padding-left: $base-gutter;
+}
+
+dl {
+    padding-left: $base-gutter;
+
+    dt {
+        font-weight: bold;
+    }
+}

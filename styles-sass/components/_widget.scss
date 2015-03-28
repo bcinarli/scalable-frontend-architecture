@@ -1,0 +1,38 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Widget
+    ------------------------------------------- **/
+/**
+  * Sidebar ve içerik alanlarında kullanılan widgetlar için
+  * temel tanımlar
+  *
+    <div class="widget">
+        İçerik kutusu/widget
+    </div>
+  */
+.widget {
+    position: relative;
+    margin: $base-gutter 0;
+    padding: $base-gutter;
+
+    &:only-child {
+        margin: 0;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    // promo widget
+    // Sass tanımları birleştirip, class çıktısını .widget-promo şeklinde veriyor
+    &-promo {
+        background: $color-primary;
+        color: #fff;
+    }
+}
+

@@ -1,0 +1,10 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Sayfa Temel Değerleri
+    ------------------------------------------- **/
+html,
+body {
+    font: $base-font-size/$base-line-height $base-font-family;
+    color: $base-color;
+}

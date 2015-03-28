@@ -1,0 +1,20 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Linkler
+    ------------------------------------------- **/
+/**
+ * Links
+ *
+ * Temel link tanımları
+ */
+a {
+    display: inline-block;
+    padding: 2px; // dokunmatik ekran için hit alanını biraz genişleiyoruz
+    color: $base-anchor-color;
+
+    nav & { // menü içindeki linklerden bazı tanımları kaldıralım
+        color: inherit;
+        text-decoration: none;
+    }
+}

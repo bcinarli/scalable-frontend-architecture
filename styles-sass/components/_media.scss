@@ -1,0 +1,48 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Media Component
+    ------------------------------------------- **/
+/**
+ * Media Item
+ *
+ * İçeriğinde bir media (resim, video vs.) ve metin şeklinde görünümü olan
+ * objelerin daha rahat kontrolü için örnek benzeri bir yapı kurgulanabilir
+ *
+    <div class="media">
+        <div class="media-visual">
+            <img src="some-link" />
+        </div>
+        <div class="media-text">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */
+.media {
+    @extend .group;
+}
+
+/**
+  * Media bloğu içinde resmin/videonun tanımı
+  */
+.media-visual {
+    display: block;
+    float: left;
+    margin-right: $base-spacing;
+}
+
+
+/*
+ *
+ */
+.media-text {
+    // metin ile alakalı genel tanımlar gelebilir
+    padding: make-half($base-gutter);
+
+    + .media-visual { // Block için önce "text" sonra "visual" tanımı olduysa
+        float: right;
+        margin-right: auto;
+        margin-left: $base-spacing;
+    }
+}

@@ -1,0 +1,70 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Generic Styles
+    ------------------------------------------- **/
+/**
+ * Grid ve benzeri kullanımlarda daha rahat genişlik hesaplamak için
+ * bütün elemanların `box-sizing` tanımını `border-box` olarak ayarlayalım
+ */
+html {
+    box-sizing: border-box;
+}
+
+* {
+    &,
+    &:after,
+    &:before {
+        box-sizing: inherit;
+    }
+}
+
+/**
+ * normalize.css'den gelen bazı tanımları genel tanımlarımız ile eşitleyelim
+ */
+hr,
+input[type="search"] {
+    box-sizing: inherit;
+}
+
+/**
+ * Sayfa boyutlarını daha rahat kullanmak için `html` ve `body`
+ * genişlik tanımlarını 100% olarak veriyoruz.
+ * Bütün görünür alanı kullanmak için `margin` ve `padding` tanımlarını
+ * `html` ve `body` elemanlarından kaldırıyoruz.
+ */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/**
+ * Bu elemanlarda hemen hemen hiç bir zaman üst taraftaki ön tanımlı
+ * `margin` kullanılmadığı için, bu değer kaldırıyoruz.
+ */
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, li,
+table, th, td {
+    margin-top: 0;
+    padding: 0;
+}
+
+
+/**
+ * Clearfix
+ * Daha anlamlı ve amacına uygun isimlendirmek için `group`
+ * olarak tanımladık. Zaten burada yapılan iş de, elemanları
+ * yan yan bir "grup" için de düzgün olarak göstermek :)
+ */
+.group {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
