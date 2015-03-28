@@ -12,5 +12,5 @@ Günlük hayatın bir parçası olan karmaşık sistemleri, web ve mobil arayüz
 #### Fontlar
 * Font: `OpenSans`
 * Başlık Font: `RobotoSlab`
-* Ana Menü: 22px
-* Metinler: 16px
+* Ana Menü: `22px`
+* Metinler: `16px` 
