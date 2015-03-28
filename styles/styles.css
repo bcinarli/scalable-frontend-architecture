@@ -1,2 +1,970 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}html{box-sizing:border-box}*,*:after,*:before{box-sizing:inherit}hr,input[type="search"]{box-sizing:inherit}html,body{width:100%;height:100%;margin:0;padding:0}h1,h2,h3,h4,h5,h6,p,ul,ol,li,table,th,td{margin-top:0;padding:0}.group:after,.media:after{content:"";display:table;clear:both}html,body{font:10.6666666667px "Helvetica Neue",Helvetica,Arial,sans-serif;color:#222}.page-wrap{position:relative;max-width:1180px;margin:0 auto}a{display:inline-block;padding:2px;color:#c54846}nav a{color:inherit;text-decoration:none}ol,ul{list-style-position:outside;padding-left:20px}dl{padding-left:20px}dl dt{font-weight:bold}.widget{position:relative;margin:20px 0;padding:20px}.widget:only-child{margin:0}.widget:first-child{margin-top:0}.widget:last-child{margin-bottom:0}.widget-promo{background:#c54846;color:#fff}.media-visual{display:block;float:left;margin-right:1em}.media-text{padding:10px}.media-text+.media-visual{float:right;margin-right:auto;margin-left:1em}.move-to-start,[dir="rtl"] .move-to-end{float:left}.move-to-end,[dir="rtl"] .move-to-start{float:right}.align-start{text-align:start}.align-end{text-align:end}.is-hidden{display:none}.for-screenreader-only{position:absolute;overflow:hidden;width:1px;height:1px;margin:-1px;padding:0;clip:rect(0 0 0 0);clip:rect(0, 0, 0, 0)}.one-whole{width:100%}.one-half{width:50%}.one-thirds,.one-third{width:33.3333333333%}.two-thirds{width:66.6666666667%}.one-quarters,.one-quarter{width:25%}.two-quarters{width:50%}.three-quarters{width:75%}.one-fifths,.one-fifth{width:20%}.two-fifths{width:40%}.three-fifths{width:60%}.four-fifths{width:80%}.one-tenths,.one-tenth{width:10%}.two-tenths{width:20%}.three-tenths{width:30%}.four-tenths{width:40%}.five-tenths{width:50%}.six-tenths{width:60%}.seven-tenths{width:70%}.eight-tenths{width:80%}.nine-tenths{width:90%}.one-twelfths,.one-twelfth{width:8.3333333333%}.two-twelfths{width:16.6666666667%}.three-twelfths{width:25%}.four-twelfths{width:33.3333333333%}.five-twelfths{width:41.6666666667%}.six-twelfths{width:50%}.seven-twelfths{width:58.3333333333%}.eight-twelfths{width:66.6666666667%}.nine-twelfths{width:75%}.ten-twelfths{width:83.3333333333%}.eleven-twelfths{width:91.6666666667%}
+@charset "UTF-8";
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Styles
+    ------------------------------------------- **/
+/*
+ * Sayfalarda kullanılan ortak stiller
+ *
+ * Tekrar kullanlabilirliği artırmak ve overwriteları azaltmak için
+ * genelden özele doğru bir kurgu ile kodlar birleştirilmelidir.
+ */
+/*
+ * AYARLAR - DEĞİŞKENLER
+ *
+ * Stil tanımlarını yaparken sistem boyunca ortak kullanılacak değişkenler
+ * Boyutlar, renkler vs.
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Settings
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Number to Name Conversions
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Font Vars
+    ------------------------------------------- **/
+/**
+ * Default font definitions
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Colors
+    ------------------------------------------- **/
+/**
+ * Named Colors
+ *
+ * Diğer renk tanımlarında tekrar kullanmak için
+ * temel sayfa renk kodları
+ */
+/**
+ * Text renkleri
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Genel boyut tanımları
+    ------------------------------------------- **/
+/**
+ * Eleman içerik boşlukları
+ */
+/**
+ * Grid aralıkları ve grid sayısı
+ */
+/**
+ * Border Widths
+ *
+ * Input vs. elemanları için default border genişliği
+ */
+/**
+ * Page Widths
+ *
+ * Elemanların genel genişlikleri
+ */
+/*
+ * ARAÇLAR
+ *
+ * Benzer çıktıları verecek kod blokları için sass mixin ve fonksiyonları
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Araçlar
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Fonksiyonlar
+    ------------------------------------------- **/
+/**
+ * Matematiksel işlemler
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Mixins
+    ------------------------------------------- **/
+/**
+ * Genişlik ile alakalı tanımlar
+ *
+ * @param $column: ilgili tanımda bir satırda olan maximum eleman sayısı
+ *
+ * @depends $numbers: anlaşılabilir/anlamlı class isimlendirme için number-to-class değişkenleri
+ * @depends $ordinals: anlaşılabilir/anlamlı class isimlendirme
+ */
+/*
+ * GLOBAL
+ *
+ * Bütün sayfa ögelerini kapsayan genel tanımlar
+ * normalize.css vs.
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Globals
+    ------------------------------------------- **/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Generic Styles
+    ------------------------------------------- **/
+/**
+ * Grid ve benzeri kullanımlarda daha rahat genişlik hesaplamak için
+ * bütün elemanların `box-sizing` tanımını `border-box` olarak ayarlayalım
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+/**
+ * normalize.css'den gelen bazı tanımları genel tanımlarımız ile eşitleyelim
+ */
+hr,
+input[type="search"] {
+  box-sizing: inherit;
+}
+
+/**
+ * Sayfa boyutlarını daha rahat kullanmak için `html` ve `body`
+ * genişlik tanımlarını 100% olarak veriyoruz.
+ * Bütün görünür alanı kullanmak için `margin` ve `padding` tanımlarını
+ * `html` ve `body` elemanlarından kaldırıyoruz.
+ */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Bu elemanlarda hemen hemen hiç bir zaman üst taraftaki ön tanımlı
+ * `margin` kullanılmadığı için, bu değer kaldırıyoruz.
+ */
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, li,
+table, th, td {
+  margin-top: 0;
+  padding: 0;
+}
+
+/**
+ * Clearfix
+ * Daha anlamlı ve amacına uygun isimlendirmek için `group`
+ * olarak tanımladık. Zaten burada yapılan iş de, elemanları
+ * yan yan bir "grup" için de düzgün olarak göstermek :)
+ */
+.group:after, .media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+ * LAYOUT
+ *
+ * Sayfanın layout ve içerik yerleşimi olarak bütün ele alınıp tanımlanması
+ * page, wrapper, main, sidebar vs.
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Layout
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Sayfa Temel Değerleri
+    ------------------------------------------- **/
+html,
+body {
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Page Wrap
+    ------------------------------------------- **/
+.page-wrap {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/*
+ * Elements
+ *
+ * Herhangi bir class eklenmeden html elemanlarının temel görünüm/davranışları
+ * `h1`, `ol`, `blockquote` vs.
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Elements
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Headings
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Linkler
+    ------------------------------------------- **/
+/**
+ * Links
+ *
+ * Temel link tanımları
+ */
+a {
+  display: inline-block;
+  padding: 2px;
+  color: #c54846;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Lists
+    ------------------------------------------- **/
+ol,
+ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+dl {
+  padding-left: 20px;
+}
+dl dt {
+  font-weight: bold;
+}
+
+/*
+ * Components
+ *
+ * Sayfanın kurgusunu oluşturan componentlerin tanımları
+ * menu, box, search-field vs
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Components
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Widget
+    ------------------------------------------- **/
+/**
+  * Sidebar ve içerik alanlarında kullanılan widgetlar için
+  * temel tanımlar
+  *
+    <div class="widget">
+        İçerik kutusu/widget
+    </div>
+  */
+.widget {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+}
+.widget:only-child {
+  margin: 0;
+}
+.widget:first-child {
+  margin-top: 0;
+}
+.widget:last-child {
+  margin-bottom: 0;
+}
+.widget-promo {
+  background: #c54846;
+  color: #fff;
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Media Component
+    ------------------------------------------- **/
+/**
+ * Media Item
+ *
+ * İçeriğinde bir media (resim, video vs.) ve metin şeklinde görünümü olan
+ * objelerin daha rahat kontrolü için örnek benzeri bir yapı kurgulanabilir
+ *
+    <div class="media">
+        <div class="media-visual">
+            <img src="some-link" />
+        </div>
+        <div class="media-text">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */
+/**
+  * Media bloğu içinde resmin/videonun tanımı
+  */
+.media-visual {
+  display: block;
+  float: left;
+  margin-right: 1em;
+}
+
+/*
+ *
+ */
+.media-text {
+  padding: 10px;
+}
+.media-text + .media-visual {
+  float: right;
+  margin-right: auto;
+  margin-left: 1em;
+}
+
+/*
+ * Auxiliary
+ *
+ * Eklendiğinde duruma göre diğer bütün tanımları iptal edecek, görünürlük, boyutu
+ * düzenleyecek yardımcı tanımlar
+ * `.is-hidden`, `.move-to-start` vs.
+ */
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Auxiliary
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+ 
+    ------------------------------------------- **/
+/**
+ * Floats
+ */
+.move-to-start,
+[dir="rtl"] .move-to-end {
+  float: left;
+}
+
+.move-to-end,
+[dir="rtl"] .move-to-start {
+  float: right;
+}
+
+/**
+ * Aligns
+ *
+ * Yazı pozisyonu için `start` ve `end` tanımı yapmak `left` ve `right`
+ * şeklinde tanım yapmaya göre daha sağlıklı ve kontrollüdür
+ */
+.align-start {
+  text-align: start;
+}
+
+.align-end {
+  text-align: end;
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Visibility Related
+    ------------------------------------------- **/
+/*
+ * İçeriği gizleme
+ */
+.is-hidden {
+  display: none;
+}
+
+/*
+ * Erişilebilirlik açısından sayfa görünmeyen elemanlar
+ *
+ */
+.for-screenreader-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Widths for General Usage
+    ------------------------------------------- **/
+/**
+ * Whole
+ *
+ * .one-whole { width: 100%; }
+ */
+.one-whole {
+  width: 100%;
+}
+
+/**
+ * Half
+ *
+ * .one-half { width: 50%; }
+ */
+.one-half {
+  width: 50%;
+}
+
+/**
+ * Thirds
+ *
+ * .one-third { width: 33%; }
+ * .two-thirds { width: 66%; }
+ */
+.one-thirds, .one-third {
+  width: 33.3333333333%;
+}
+
+.two-thirds {
+  width: 66.6666666667%;
+}
+
+/**
+ * Quarters
+ *
+ * .one-quarter { width: 25%; }
+ * .two-quarters { width: 50%; }
+ * .three-quarters { width: 75%; }
+ */
+.one-quarters, .one-quarter {
+  width: 25%;
+}
+
+.two-quarters {
+  width: 50%;
+}
+
+.three-quarters {
+  width: 75%;
+}
+
+/**
+ * Fifths
+ *
+ * .one-fifth { width: 20%; }
+ * .two-fifths { width: 40%; }
+ * .three-fifths { width: 60%; }
+ * .four-fifths { width: 80%; }
+ */
+.one-fifths, .one-fifth {
+  width: 20%;
+}
+
+.two-fifths {
+  width: 40%;
+}
+
+.three-fifths {
+  width: 60%;
+}
+
+.four-fifths {
+  width: 80%;
+}
+
+/**
+ * Tenths
+ *
+ * .one-tenth { width: 10%; }
+ * .two-tenths { width: 20%; }
+ * .three-tenths { width: 30%; }
+ * ...
+ * .nine-fifths { width: 90%; }
+ */
+.one-tenths, .one-tenth {
+  width: 10%;
+}
+
+.two-tenths {
+  width: 20%;
+}
+
+.three-tenths {
+  width: 30%;
+}
+
+.four-tenths {
+  width: 40%;
+}
+
+.five-tenths {
+  width: 50%;
+}
+
+.six-tenths {
+  width: 60%;
+}
+
+.seven-tenths {
+  width: 70%;
+}
+
+.eight-tenths {
+  width: 80%;
+}
+
+.nine-tenths {
+  width: 90%;
+}
+
+/**
+ * Twelfths
+ *
+ * .one-twelfth { width: 8.33%; }
+ * .two-twelfths { width: 16.66%; }
+ * .three-twelfths { width: 25%; }
+ * ...
+ * .ten-twelfths { width: 83.33%; }
+ * .eleven-twelfths { width: 91.66%; }
+ */
+.one-twelfths, .one-twelfth {
+  width: 8.3333333333%;
+}
+
+.two-twelfths {
+  width: 16.6666666667%;
+}
+
+.three-twelfths {
+  width: 25%;
+}
+
+.four-twelfths {
+  width: 33.3333333333%;
+}
+
+.five-twelfths {
+  width: 41.6666666667%;
+}
+
+.six-twelfths {
+  width: 50%;
+}
+
+.seven-twelfths {
+  width: 58.3333333333%;
+}
+
+.eight-twelfths {
+  width: 66.6666666667%;
+}
+
+.nine-twelfths {
+  width: 75%;
+}
+
+.ten-twelfths {
+  width: 83.3333333333%;
+}
+
+.eleven-twelfths {
+  width: 91.6666666667%;
+}
+
 /*# sourceMappingURL=styles.css.map */

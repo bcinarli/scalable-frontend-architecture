@@ -5,6 +5,7 @@
     ------------------------------------------- **/
 html,
 body {
-    font: $base-font-size/$base-line-height $base-font-family;
+    font: $base-font-size $base-font-family;
+    line-height: $base-line-height;
     color: $base-color;
 }
